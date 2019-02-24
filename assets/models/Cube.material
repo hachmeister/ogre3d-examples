@@ -1,0 +1,7 @@
+hlms Cube pbs
+{
+  roughness     0.4
+  fresnel       1.33
+
+  diffuse_map   Cube_diffuse.png
+}

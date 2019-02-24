@@ -1,0 +1,17 @@
+compositor_node SceneRenderingNode {
+  in 0 renderwindow
+
+  target renderwindow {
+    pass clear {
+      colour_value  0.2 0.4 0.6 1
+    }
+
+    pass render_scene {
+      overlays  on
+    }
+  }
+}
+
+workspace SceneWorkspace {
+  connect_output SceneRenderingNode 0
+}

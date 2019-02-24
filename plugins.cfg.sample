@@ -1,0 +1,3 @@
+PluginFolder=/home/{HOME}/apps/ogre3d/lib/OGRE
+
+Plugin=RenderSystem_GL3Plus
