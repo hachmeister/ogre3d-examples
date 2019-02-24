@@ -17,3 +17,11 @@ Running the example:
 ```bash
 ./cube/cube
 ```
+
+### Gui example
+
+Running the example:
+
+```bash
+./gui/gui
+```

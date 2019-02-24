@@ -11,6 +11,11 @@ class RenderWindow;
 class Camera;
 }  // namespace Ogre
 
+namespace MyGUI {
+class Gui;
+class Ogre2Platform;
+}  // namespace MyGUI
+
 class Game {
 public:
   Game();
@@ -28,7 +33,12 @@ protected:
 
   Ogre::SceneManager& sceneManager() const;
 
+  MyGUI::Gui& gui() const;
+
   void shutdown();
+
+private:
+  void resizeWindow(unsigned int width, unsigned int height);
 
 private:
   bool shutdown_;
@@ -39,4 +49,7 @@ private:
   Ogre::Camera* camera_;
 
   SDL_Window* window_;
+
+  MyGUI::Gui* gui_;
+  MyGUI::Ogre2Platform* platform_;
 };

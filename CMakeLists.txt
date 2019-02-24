@@ -13,5 +13,6 @@ link_directories(
 
 add_subdirectory(base)
 add_subdirectory(cube)
+add_subdirectory(gui)
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/plugins.cfg.sample ${CMAKE_CURRENT_BINARY_DIR}/plugins.cfg)
