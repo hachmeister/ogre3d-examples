@@ -1,3 +1,3 @@
-PluginFolder=/home/{HOME}/apps/ogre3d/lib/OGRE
+PluginFolder=${OGRE_PREFIX_PATH}/lib/OGRE
 
 Plugin=RenderSystem_GL3Plus
