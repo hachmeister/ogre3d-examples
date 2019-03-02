@@ -14,15 +14,16 @@ add_library(${PROJECT_NAME} SHARED
 target_include_directories(${PROJECT_NAME}
   PUBLIC
     ${PROJECT_SOURCE_DIR}
-    ${OGRE_PREFIX_PATH}/include/OGRE
-    /usr/include/MYGUI
+    ${SDL2_INCLUDE_DIR}
+    ${OGRE_INCLUDE_DIR}
+    ${MyGUI_INCLUDE_DIR}
 )
 
 target_link_libraries(${PROJECT_NAME}
   PUBLIC
-    SDL2
-    OgreMain
-    OgreHlmsPbs
-    OgreHlmsUnlit
-    MyGUIEngine
+    ${SDL2_LIBRARY}
+    ${OGRE_LIBRARY}
+    ${OGRE_PBS_LIBRARY}
+    ${OGRE_UNLIT_LIBRARY}
+    ${MyGUI_LIBRARY}
 )

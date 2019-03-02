@@ -1,0 +1,6 @@
+include(LibFindMacros)
+
+libfind_pkg_detect(MyGUI MyGUI MYGUI
+  FIND_PATH MyGUI.h HINTS $ENV{MYGUI_HOME}/include PATH_SUFFIXES MYGUI MyGUI
+  FIND_LIBRARY MyGUIEngine HINTS $ENV{MYGUI_HOME}/lib PATH_SUFFIXES ""
+)
