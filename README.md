@@ -5,7 +5,7 @@
 ```bash
 mkdir build
 cd build
-cmake -DOGRE_PREFIX_PATH=<path-to-ogre-dir> ..
+OGRE_HOME=<path-to-ogre> cmake ..
 make
 ln -s ../assets .
 ```
