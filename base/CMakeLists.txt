@@ -14,16 +14,14 @@ add_library(${PROJECT_NAME} SHARED
 target_include_directories(${PROJECT_NAME}
   PUBLIC
     ${PROJECT_SOURCE_DIR}
-    ${SDL2_INCLUDE_DIR}
-    ${OGRE_INCLUDE_DIR}
-    ${MyGUI_INCLUDE_DIR}
+    ${SDL2_INCLUDE_DIRS}
+    ${OGRE_INCLUDE_DIRS}
+    ${MyGUI_INCLUDE_DIRS}
 )
 
 target_link_libraries(${PROJECT_NAME}
   PUBLIC
-    ${SDL2_LIBRARY}
-    ${OGRE_LIBRARY}
-    ${OGRE_PBS_LIBRARY}
-    ${OGRE_UNLIT_LIBRARY}
-    ${MyGUI_LIBRARY}
+    ${SDL2_LIBRARIES}
+    ${OGRE_LIBRARIES}
+    ${MyGUI_LIBRARIES}
 )
